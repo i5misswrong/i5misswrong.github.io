@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>多张图片组合成视频 | i5misswrong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="i5misswrong" />
+  
+  <meta name="description" content="对于多张图片转视频，有很多方法 使用PR/会声会影等软件，比较专业  使用某些工具箱自带的工具，例如tecplot  或者使用PS转成gif动图   如果有一连串图片需要简单合成，可以使用Python+OpenCV来处理，速度快，体积小，清晰度也不错12345678910111213141516import cv2#图片路径 注意Windows复制的路径是反斜杠，需要改成斜杠img_root =">
+<meta name="keywords" content="python open-cv">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多张图片组合成视频">
+<meta property="og:url" content="http://yoursite.com/2018/06/25/2018-06-25-图片转视频/index.html">
+<meta property="og:site_name" content="i5misswrong">
+<meta property="og:description" content="对于多张图片转视频，有很多方法 使用PR/会声会影等软件，比较专业  使用某些工具箱自带的工具，例如tecplot  或者使用PS转成gif动图   如果有一连串图片需要简单合成，可以使用Python+OpenCV来处理，速度快，体积小，清晰度也不错12345678910111213141516import cv2#图片路径 注意Windows复制的路径是反斜杠，需要改成斜杠img_root =">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-25T12:25:28.809Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="多张图片组合成视频">
+<meta name="twitter:description" content="对于多张图片转视频，有很多方法 使用PR/会声会影等软件，比较专业  使用某些工具箱自带的工具，例如tecplot  或者使用PS转成gif动图   如果有一连串图片需要简单合成，可以使用Python+OpenCV来处理，速度快，体积小，清晰度也不错12345678910111213141516import cv2#图片路径 注意Windows复制的路径是反斜杠，需要改成斜杠img_root =">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">i5misswrong</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        i5misswrong
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        沉稳内敛，低调前行，这里是死亡骑士的堡垒
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="i5misswrong" target="_blank" href="//i5misswrong.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/i5misswrong">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/icefiring">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-2018-06-25-图片转视频" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      多张图片组合成视频
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/hack/">hack</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-06-25
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="对于多张图片转视频，有很多方法"><a href="#对于多张图片转视频，有很多方法" class="headerlink" title="对于多张图片转视频，有很多方法"></a>对于多张图片转视频，有很多方法</h3><ul>
+<li><p>使用PR/会声会影等软件，比较专业</p>
+</li>
+<li><p>使用某些工具箱自带的工具，例如tecplot</p>
+</li>
+<li><p>或者使用PS转成gif动图</p>
+</li>
+</ul>
+<h3 id="如果有一连串图片需要简单合成，可以使用Python-OpenCV来处理，速度快，体积小，清晰度也不错"><a href="#如果有一连串图片需要简单合成，可以使用Python-OpenCV来处理，速度快，体积小，清晰度也不错" class="headerlink" title="如果有一连串图片需要简单合成，可以使用Python+OpenCV来处理，速度快，体积小，清晰度也不错"></a>如果有一连串图片需要简单合成，可以使用Python+OpenCV来处理，速度快，体积小，清晰度也不错</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">#图片路径 注意Windows复制的路径是反斜杠，需要改成斜杠</span><br><span class="line">img_root = &apos;C:/Users/i5mis/Desktop/F70_rc8/&apos; </span><br><span class="line"></span><br><span class="line">fps = 5  # 保存视频的FPS，可以适当调整</span><br><span class="line">fourcc = cv2.VideoWriter_fourcc(*&apos;MJPG&apos;)</span><br><span class="line"></span><br><span class="line">#保存文件名以及大小</span><br><span class="line">videoWriter = cv2.VideoWriter(&apos;saveVideo.avi&apos;, fourcc, fps, (640, 480)) </span><br><span class="line"></span><br><span class="line">#循环读入图片 </span><br><span class="line">for i in range(63): #此处可以使用os模块获取文件数目</span><br><span class="line">    frame = cv2.imread(img_root + str(i + 1) + &apos;.png&apos;)</span><br><span class="line">    videoWriter.write(frame)</span><br><span class="line">videoWriter.release()</span><br></pre></td></tr></table></figure>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年06月25日 20:25</p>
+        <p>原始链接： <a class="post-url" href="/2018/06/25/2018-06-25-图片转视频/" title="多张图片组合成视频">http://yoursite.com/2018/06/25/2018-06-25-图片转视频/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="i5misswrong">
+                i5misswrong
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+           
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/pythonopen-cv/" class="color5">python open-cv</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/10/2018-03-10-opencv_config/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">opencv 安装配置</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 i5misswrong<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    
+  </div>
+</body>
+</html>

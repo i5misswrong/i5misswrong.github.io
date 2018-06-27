@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>opencv 安装配置 | i5misswrong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="i5misswrong" />
+  
+  <meta name="description" content="运行环境：Windows10+vs17 OpenCV版本3.4.1 1 下载OpenCV  https://opencv.org/releases.html  目前版本是3.4.1 并解压  我的解压位置为D:\Install\opencv 2 启动vs2017 创建一个c++控制台应用程序3 在项目右键 打开属性,首先确认当前配置 X86和x64 release和debug 这个需要手动指定 默">
+<meta name="keywords" content="opencv">
+<meta property="og:type" content="article">
+<meta property="og:title" content="opencv 安装配置">
+<meta property="og:url" content="http://yoursite.com/2018/03/10/2018-03-10-opencv_config/index.html">
+<meta property="og:site_name" content="i5misswrong">
+<meta property="og:description" content="运行环境：Windows10+vs17 OpenCV版本3.4.1 1 下载OpenCV  https://opencv.org/releases.html  目前版本是3.4.1 并解压  我的解压位置为D:\Install\opencv 2 启动vs2017 创建一个c++控制台应用程序3 在项目右键 打开属性,首先确认当前配置 X86和x64 release和debug 这个需要手动指定 默">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/1.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/2.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/3.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/4.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/5.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/6.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/7.png">
+<meta property="og:image" content="http://yoursite.com/assets/img/opencv_config/8.png">
+<meta property="og:updated_time" content="2018-03-10T08:15:19.781Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="opencv 安装配置">
+<meta name="twitter:description" content="运行环境：Windows10+vs17 OpenCV版本3.4.1 1 下载OpenCV  https://opencv.org/releases.html  目前版本是3.4.1 并解压  我的解压位置为D:\Install\opencv 2 启动vs2017 创建一个c++控制台应用程序3 在项目右键 打开属性,首先确认当前配置 X86和x64 release和debug 这个需要手动指定 默">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/opencv_config/1.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">i5misswrong</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        i5misswrong
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        沉稳内敛，低调前行，这里是死亡骑士的堡垒
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="i5misswrong" target="_blank" href="//i5misswrong.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/i5misswrong">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/icefiring">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-2018-03-10-opencv_config" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      opencv 安装配置
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/hack/">hack</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-03-10
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p>运行环境：Windows10+vs17 OpenCV版本3.4.1</p>
+<h3 id="1-下载OpenCV-https-opencv-org-releases-html-目前版本是3-4-1-并解压-我的解压位置为D-Install-opencv"><a href="#1-下载OpenCV-https-opencv-org-releases-html-目前版本是3-4-1-并解压-我的解压位置为D-Install-opencv" class="headerlink" title="1 下载OpenCV  https://opencv.org/releases.html  目前版本是3.4.1 并解压  我的解压位置为D:\Install\opencv"></a>1 下载OpenCV  <a href="https://opencv.org/releases.html" target="_blank" rel="noopener">https://opencv.org/releases.html</a>  目前版本是3.4.1 并解压  我的解压位置为D:\Install\opencv</h3><p><img src="/assets/img/opencv_config/1.png" alt="AltText"></p>
+<h3 id="2-启动vs2017-创建一个c-控制台应用程序"><a href="#2-启动vs2017-创建一个c-控制台应用程序" class="headerlink" title="2 启动vs2017 创建一个c++控制台应用程序"></a>2 启动vs2017 创建一个c++控制台应用程序</h3><h3 id="3-在项目右键-打开属性-首先确认当前配置"><a href="#3-在项目右键-打开属性-首先确认当前配置" class="headerlink" title="3 在项目右键 打开属性,首先确认当前配置"></a>3 在项目右键 打开属性,首先确认当前配置</h3><p><img src="/assets/img/opencv_config/2.png" alt="AltText"></p>
+<h5 id="X86和x64-release和debug-这个需要手动指定-默认一般是x86，如果你在release-x86下配置了半天，却在debug-x64下调试-会出错的"><a href="#X86和x64-release和debug-这个需要手动指定-默认一般是x86，如果你在release-x86下配置了半天，却在debug-x64下调试-会出错的" class="headerlink" title="X86和x64 release和debug 这个需要手动指定 默认一般是x86，如果你在release+x86下配置了半天，却在debug+x64下调试 会出错的"></a>X86和x64 release和debug 这个需要手动指定 默认一般是x86，如果你在release+x86下配置了半天，却在debug+x64下调试 会出错的</h5><h5 id="Vc-目录-包含目录添加D-Install-opencv-build-include路径下的文件夹"><a href="#Vc-目录-包含目录添加D-Install-opencv-build-include路径下的文件夹" class="headerlink" title="Vc++目录 - 包含目录添加D:\Install\opencv\build\include路径下的文件夹"></a>Vc++目录 - 包含目录添加D:\Install\opencv\build\include路径下的文件夹</h5><p><img src="/assets/img/opencv_config/3.png" alt="AltText"></p>
+<h5 id="引用目录和库目录添加D-Install-opencv-build-x64-vc15路径下的文件夹"><a href="#引用目录和库目录添加D-Install-opencv-build-x64-vc15路径下的文件夹" class="headerlink" title="引用目录和库目录添加D:\Install\opencv\build\x64\vc15路径下的文件夹"></a>引用目录和库目录添加D:\Install\opencv\build\x64\vc15路径下的文件夹</h5><p><img src="/assets/img/opencv_config/4.png" alt="AltText"></p>
+<p><img src="/assets/img/opencv_config/5.png" alt="AltText"></p>
+<h5 id="连接器-输入-附加依赖项将D-Install-opencv-build-x64-vc15-lib路径下的opencv-world341-lib和opencv-world341d-lib两个文件名赋值复制过去"><a href="#连接器-输入-附加依赖项将D-Install-opencv-build-x64-vc15-lib路径下的opencv-world341-lib和opencv-world341d-lib两个文件名赋值复制过去" class="headerlink" title="连接器-输入-附加依赖项将D:\Install\opencv\build\x64\vc15\lib路径下的opencv_world341.lib和opencv_world341d.lib两个文件名赋值复制过去"></a>连接器-输入-附加依赖项将D:\Install\opencv\build\x64\vc15\lib路径下的opencv_world341.lib和opencv_world341d.lib两个文件名赋值复制过去</h5><p><img src="/assets/img/opencv_config/6.png" alt="AltText"></p>
+<p><img src="/assets/img/opencv_config/7.png" alt="AltText"></p>
+<h4 id="注意：如果配置release的话-只需要复制opencv-world341-lib-而在debug下复制opencv-world341d-lib"><a href="#注意：如果配置release的话-只需要复制opencv-world341-lib-而在debug下复制opencv-world341d-lib" class="headerlink" title="注意：如果配置release的话 只需要复制opencv_world341.lib  而在debug下复制opencv_world341d.lib"></a>注意：如果配置release的话 只需要复制opencv_world341.lib  而在debug下复制opencv_world341d.lib</h4><h5 id="如果在运行的时候提示opencv-world341-dll和opencv-world341d-dll丢失，一个暴力解决办法是将D-Install-opencv-build-x64-vc15-bin路径下的opencv-world341-dll和opencv-world341d-dl复制到C-Windows-System32"><a href="#如果在运行的时候提示opencv-world341-dll和opencv-world341d-dll丢失，一个暴力解决办法是将D-Install-opencv-build-x64-vc15-bin路径下的opencv-world341-dll和opencv-world341d-dl复制到C-Windows-System32" class="headerlink" title="如果在运行的时候提示opencv_world341.dll和opencv_world341d.dll丢失，一个暴力解决办法是将D:\Install\opencv\build\x64\vc15\bin路径下的opencv_world341.dll和opencv_world341d.dl复制到C:\Windows\System32"></a>如果在运行的时候提示opencv_world341.dll和opencv_world341d.dll丢失，一个暴力解决办法是将D:\Install\opencv\build\x64\vc15\bin路径下的opencv_world341.dll和opencv_world341d.dl复制到C:\Windows\System32</h5><h3 id="一切就绪-开始调试程序"><a href="#一切就绪-开始调试程序" class="headerlink" title="一切就绪 开始调试程序"></a>一切就绪 开始调试程序</h3><pre><code>#include &quot;stdafx.h&quot;
+#include &lt;opencv2/opencv.hpp&gt;
+#include &lt;iostream&gt;
+using namespace std;
+using namespace cv;
+int main()
+{
+    Mat image = imread(&quot;D:\\x2.png&quot;);  //存放自己图像的路径 
+    imshow(&quot;显示图像&quot;, image);
+    waitKey(1110);
+    return 0;
+}
+</code></pre><p>需要注意这一行</p>
+<pre><code>Mat image = imread(&quot;D:\\x2.png&quot;);
+</code></pre><p>路径是需要加’\‘的<br>如果正确无误，将图片读取并显示</p>
+<p><img src="/assets/img/opencv_config/8.png" alt="AltText"></p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年03月10日 16:15</p>
+        <p>原始链接： <a class="post-url" href="/2018/03/10/2018-03-10-opencv_config/" title="opencv 安装配置">http://yoursite.com/2018/03/10/2018-03-10-opencv_config/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="i5misswrong">
+                i5misswrong
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+           
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/opencv/" class="color2">opencv</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/06/25/2018-06-25-图片转视频/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          多张图片组合成视频
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/02/25/2018-02-25-math type install/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">math type 破解安装</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 i5misswrong<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    
+  </div>
+</body>
+</html>
