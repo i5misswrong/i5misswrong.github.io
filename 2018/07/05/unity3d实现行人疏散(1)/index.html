@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>unity3d实现行人疏散模型(1)环境配置 | i5misswrong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="i5misswrong" />
+  
+  <meta name="description" content="本文介绍了以下几种软件的安装方法Visual Studio and Unity 3d3D Max and MayaGitss/ssr1、Visual Studio安装下载地址：https://code.visualstudio.com/Download 安装的时候将以下组件勾选上 注意：组件可以随时下载，打开visual studio installer就可以下载2、注册unity3d官网：htt">
+<meta name="keywords" content="unity 3dmax 环境配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="unity3d实现行人疏散模型(1)环境配置">
+<meta property="og:url" content="http://yoursite.com/2018/07/05/unity3d实现行人疏散(1)/index.html">
+<meta property="og:site_name" content="i5misswrong">
+<meta property="og:description" content="本文介绍了以下几种软件的安装方法Visual Studio and Unity 3d3D Max and MayaGitss/ssr1、Visual Studio安装下载地址：https://code.visualstudio.com/Download 安装的时候将以下组件勾选上 注意：组件可以随时下载，打开visual studio installer就可以下载2、注册unity3d官网：htt">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVjzhn.md.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvehR.md.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvu1x.md.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvGAH.md.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvJNd.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvU3t.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvagP.png">
+<meta property="og:image" content="https://s1.ax1x.com/2018/07/05/PVvdjf.png">
+<meta property="og:updated_time" content="2018-07-05T13:11:37.227Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="unity3d实现行人疏散模型(1)环境配置">
+<meta name="twitter:description" content="本文介绍了以下几种软件的安装方法Visual Studio and Unity 3d3D Max and MayaGitss/ssr1、Visual Studio安装下载地址：https://code.visualstudio.com/Download 安装的时候将以下组件勾选上 注意：组件可以随时下载，打开visual studio installer就可以下载2、注册unity3d官网：htt">
+<meta name="twitter:image" content="https://s1.ax1x.com/2018/07/05/PVjzhn.md.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">i5misswrong</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        i5misswrong
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        沉稳内敛，低调前行，这里是死亡骑士的堡垒
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="i5misswrong" target="_blank" href="//i5misswrong.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/i5misswrong">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/icefiring">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-unity3d实现行人疏散(1)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      unity3d实现行人疏散模型(1)环境配置
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/hack/">hack</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-05
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h2 id="本文介绍了以下几种软件的安装方法"><a href="#本文介绍了以下几种软件的安装方法" class="headerlink" title="本文介绍了以下几种软件的安装方法"></a>本文介绍了以下几种软件的安装方法</h2><h4 id="Visual-Studio-and-Unity-3d"><a href="#Visual-Studio-and-Unity-3d" class="headerlink" title="Visual Studio and Unity 3d"></a>Visual Studio and Unity 3d</h4><h4 id="3D-Max-and-Maya"><a href="#3D-Max-and-Maya" class="headerlink" title="3D Max and Maya"></a>3D Max and Maya</h4><h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><h4 id="ss-ssr"><a href="#ss-ssr" class="headerlink" title="ss/ssr"></a>ss/ssr</h4><h2 id="1、Visual-Studio安装"><a href="#1、Visual-Studio安装" class="headerlink" title="1、Visual Studio安装"></a>1、Visual Studio安装</h2><h3 id="下载地址：https-code-visualstudio-com-Download"><a href="#下载地址：https-code-visualstudio-com-Download" class="headerlink" title="下载地址：https://code.visualstudio.com/Download"></a>下载地址：<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">https://code.visualstudio.com/Download</a></h3><p><img src="https://s1.ax1x.com/2018/07/05/PVjzhn.md.png" alt="PVjzhn.md.png"></p>
+<h4 id="安装的时候将以下组件勾选上"><a href="#安装的时候将以下组件勾选上" class="headerlink" title="安装的时候将以下组件勾选上"></a>安装的时候将以下组件勾选上</h4><p><img src="https://s1.ax1x.com/2018/07/05/PVvehR.md.png" alt="PVvehR.md.png"><br><img src="https://s1.ax1x.com/2018/07/05/PVvu1x.md.png" alt="PVvu1x.md.png"></p>
+<h4 id="注意：组件可以随时下载，打开visual-studio-installer就可以下载"><a href="#注意：组件可以随时下载，打开visual-studio-installer就可以下载" class="headerlink" title="注意：组件可以随时下载，打开visual studio installer就可以下载"></a><strong>注意：组件可以随时下载，打开visual studio installer就可以下载</strong></h4><h2 id="2、注册unity3d"><a href="#2、注册unity3d" class="headerlink" title="2、注册unity3d"></a>2、注册unity3d</h2><h3 id="官网：https-unity3d-com-cn"><a href="#官网：https-unity3d-com-cn" class="headerlink" title="官网：https://unity3d.com/cn"></a>官网：<a href="https://unity3d.com/cn" target="_blank" rel="noopener">https://unity3d.com/cn</a></h3><h4 id="在官网上注册一个账号，登录后即可开始使用"><a href="#在官网上注册一个账号，登录后即可开始使用" class="headerlink" title="在官网上注册一个账号，登录后即可开始使用"></a>在官网上注册一个账号，登录后即可开始使用</h4><h4 id="官网上有很多教程和文档，记得多多查阅"><a href="#官网上有很多教程和文档，记得多多查阅" class="headerlink" title="官网上有很多教程和文档，记得多多查阅"></a><strong>官网上有很多教程和文档，记得多多查阅</strong></h4><h2 id="3、3D-Max-and-Maya"><a href="#3、3D-Max-and-Maya" class="headerlink" title="3、3D Max and Maya"></a>3、3D Max and Maya</h2><h3 id="3D-Max-网站：https-www-autodesk-com-cn-education-free-software-3ds-max"><a href="#3D-Max-网站：https-www-autodesk-com-cn-education-free-software-3ds-max" class="headerlink" title="3D Max 网站：https://www.autodesk.com.cn/education/free-software/3ds-max"></a>3D Max 网站：<a href="https://www.autodesk.com.cn/education/free-software/3ds-max" target="_blank" rel="noopener">https://www.autodesk.com.cn/education/free-software/3ds-max</a></h3><h3 id="Maya-网站：https-www-autodesk-com-cn-education-free-software-maya"><a href="#Maya-网站：https-www-autodesk-com-cn-education-free-software-maya" class="headerlink" title="Maya 网站：https://www.autodesk.com.cn/education/free-software/maya"></a>Maya 网站：<a href="https://www.autodesk.com.cn/education/free-software/maya" target="_blank" rel="noopener">https://www.autodesk.com.cn/education/free-software/maya</a></h3><h4 id="首先创建学生账户"><a href="#首先创建学生账户" class="headerlink" title="首先创建学生账户"></a>首先创建学生账户</h4><p><a href="https://imgchr.com/i/PVvGAH" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2018/07/05/PVvGAH.md.png" alt="PVvGAH.md.png"></a><br><img src="https://s1.ax1x.com/2018/07/05/PVvJNd.png" alt="PVvJNd.png"><br><img src="https://s1.ax1x.com/2018/07/05/PVvU3t.png" alt="PVvU3t.png"><br><img src="https://s1.ax1x.com/2018/07/05/PVvagP.png" alt="PVvagP.png"><br><img src="https://s1.ax1x.com/2018/07/05/PVvdjf.png" alt="PVvdjf.png"></p>
+<h4 id="注册成功后根据序列号和密码进行安装"><a href="#注册成功后根据序列号和密码进行安装" class="headerlink" title="注册成功后根据序列号和密码进行安装"></a>注册成功后根据序列号和密码进行安装</h4><h4 id="注意：通过浏览器下载是速度最快的，但是我发现下载的文件有破损，所以推荐立即安装或立即下载"><a href="#注意：通过浏览器下载是速度最快的，但是我发现下载的文件有破损，所以推荐立即安装或立即下载" class="headerlink" title="注意：通过浏览器下载是速度最快的，但是我发现下载的文件有破损，所以推荐立即安装或立即下载"></a><strong>注意：通过浏览器下载是速度最快的，但是我发现下载的文件有破损，所以推荐立即安装或立即下载</strong></h4><h2 id="4、Git安装"><a href="#4、Git安装" class="headerlink" title="4、Git安装"></a>4、Git安装</h2><h3 id="官网：https-git-scm-com"><a href="#官网：https-git-scm-com" class="headerlink" title="官网：https://git-scm.com/"></a>官网：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></h3><h3 id="gitee-码云-：https-gitee-com"><a href="#gitee-码云-：https-gitee-com" class="headerlink" title="gitee(码云)：https://gitee.com/"></a>gitee(码云)：<a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a></h3><h2 id="5、科学上网"><a href="#5、科学上网" class="headerlink" title="5、科学上网"></a>5、科学上网</h2><h4 id="TNT加速，省心，10￥-月-https-www-tntjsq-com"><a href="#TNT加速，省心，10￥-月-https-www-tntjsq-com" class="headerlink" title="TNT加速，省心，10￥/月 https://www.tntjsq.com/"></a>TNT加速，省心，10￥/月 <a href="https://www.tntjsq.com/" target="_blank" rel="noopener">https://www.tntjsq.com/</a></h4><h4 id="蓝灯，更省心，有较少免费流量-500M-月-，只能包年198￥-年"><a href="#蓝灯，更省心，有较少免费流量-500M-月-，只能包年198￥-年" class="headerlink" title="蓝灯，更省心，有较少免费流量(500M/月)，只能包年198￥/年"></a>蓝灯，更省心，有较少免费流量(500M/月)，只能包年198￥/年</h4><h4 id="http-s3-amazonaws-com-urtuz53txrmk9-index-html"><a href="#http-s3-amazonaws-com-urtuz53txrmk9-index-html" class="headerlink" title="http://s3.amazonaws.com/urtuz53txrmk9/index.html"></a><a href="http://s3.amazonaws.com/urtuz53txrmk9/index.html" target="_blank" rel="noopener">http://s3.amazonaws.com/urtuz53txrmk9/index.html</a></h4><h4 id="vultr-搬瓦工，国外服务器，自己搭梯子，最便宜的2-5-月-https-my-vultr-com"><a href="#vultr-搬瓦工，国外服务器，自己搭梯子，最便宜的2-5-月-https-my-vultr-com" class="headerlink" title="vultr/搬瓦工，国外服务器，自己搭梯子，最便宜的2.5$/月 https://my.vultr.com/"></a>vultr/搬瓦工，国外服务器，自己搭梯子，最便宜的2.5$/月 <a href="https://my.vultr.com/" target="_blank" rel="noopener">https://my.vultr.com/</a></h4><h2 id="6、学习网站推荐"><a href="#6、学习网站推荐" class="headerlink" title="6、学习网站推荐"></a>6、学习网站推荐</h2><h4 id="菜鸟教程-http-www-runoob-com"><a href="#菜鸟教程-http-www-runoob-com" class="headerlink" title="菜鸟教程 http://www.runoob.com/"></a>菜鸟教程 <a href="http://www.runoob.com/" target="_blank" rel="noopener">http://www.runoob.com/</a></h4><h4 id="廖雪峰https-www-liaoxuefeng-com"><a href="#廖雪峰https-www-liaoxuefeng-com" class="headerlink" title="廖雪峰https://www.liaoxuefeng.com/"></a>廖雪峰<a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">https://www.liaoxuefeng.com/</a></h4><h4 id="Githubhttps-github-com-explore"><a href="#Githubhttps-github-com-explore" class="headerlink" title="Githubhttps://github.com/explore"></a>Github<a href="https://github.com/explore" target="_blank" rel="noopener">https://github.com/explore</a></h4><h4 id="慕课网-https-www-imooc-com"><a href="#慕课网-https-www-imooc-com" class="headerlink" title="慕课网 https://www.imooc.com/"></a>慕课网 <a href="https://www.imooc.com/" target="_blank" rel="noopener">https://www.imooc.com/</a></h4>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月05日 21:11</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/05/unity3d实现行人疏散(1)/" title="unity3d实现行人疏散模型(1)环境配置">http://yoursite.com/2018/07/05/unity3d实现行人疏散(1)/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="i5misswrong">
+                i5misswrong
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+           
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/unity3dmax环境配置/" class="color2">unity 3dmax 环境配置</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/25/2018-06-25-图片转视频/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">多张图片组合成视频</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 i5misswrong<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    
+  </div>
+</body>
+</html>
